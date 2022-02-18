@@ -1,5 +1,5 @@
 <p align="center">
-    <i>Helm charts for software developed and/or used at <a href="https://sill.etalab.gouv.fr">Etalab</a></i>
+    <i>Helm charts for software developed and/or used at <a href="https://etalab.gouv.fr">Etalab</a></i>
     <br>
     <br>
     <a href="https://github.com/etalab/helm-charts/actions">
