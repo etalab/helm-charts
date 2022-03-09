@@ -3,13 +3,13 @@ entries:
   sill:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-03-09T00:20:04.534264838Z"
+    created: "2022-03-09T20:28:36.143114705Z"
     description: Application behind https://sill.etalab.gouv.fr
-    digest: 154e9865a17219c8165270a62701bb69ef66f28ecc40acf8a1abd71b7184b9eb
+    digest: bf6b9af4ca11d5f109fccdc6f1685d129574aa7e9bb5a7be07828800d438a7e9
     icon: https://etalab.github.io/helm-charts/icons/marianne.png
     name: sill
     type: application
     urls:
-    - https://github.com/etalab/helm-charts/releases/download/sill-0.0.3/sill-0.0.3.tgz
-    version: 0.0.3
-generated: "2022-03-09T00:20:04.534271038Z"
+    - https://github.com/etalab/helm-charts/releases/download/sill-0.0.4/sill-0.0.4.tgz
+    version: 0.0.4
+generated: "2022-03-09T20:28:36.143120206Z"
