@@ -65,21 +65,21 @@ ui:
   nodeSelector: {}
   tolerations: []
   affinity: {}
-  env:
-    CONFIGURATION: |
-      {
-        "mockAuthentication": {
-          "isUserInitiallyLoggedIn": false,
-          "user": {
-            "email": "pierre.dupont@gouv.fr",
-            "familyName": "Dupont",
-            "firstName": "Pierre",
-            "username": "dupontp",
-            "groups": '[]',
-            "local": "fr"
-          }
-        }
-      }
+# env:
+#   CONFIGURATION: |
+#     {
+#       "mockAuthentication": {
+#         "isUserInitiallyLoggedIn": false,
+#         "user": {
+#           "email": "pierre.dupont@gouv.fr",
+#           "familyName": "Dupont",
+#           "firstName": "Pierre",
+#           "username": "dupontp",
+#           "groups": '[]',
+#           "local": "fr"
+#         }
+#       }
+#     }
 
       
 
@@ -120,26 +120,26 @@ api:
   nodeSelector: {}
   tolerations: []
   affinity: {}
-  env:
-    CONFIGURATION: |
-      {
-        /*
-        "keycloakParams": {
-          "url": "https://auth.etalab.gouv.fr",
-          "realm": "etalab",
-          "clientId": "sill"
-        }
-        */
-        "jwtClaims": {
-          "email": "email",
-          "familyName": "familyName",
-          "firstName": "familyName",
-          "username": "username",
-          "groups": "groups",
-          "local": "local"
-        },
-        "githubPersonalAccessToken": { 
-          "envName": "GITHUB_PERSONAL_ACCESS_TOKEN" 
-        }
-      }
-  githubPersonalAccessTokenSecretName: my_secret
+#  env:
+#    CONFIGURATION: |
+#      {
+#        /*
+#        "keycloakParams": {
+#          "url": "https://auth.etalab.gouv.fr",
+#          "realm": "etalab",
+#          "clientId": "sill"
+#        }
+#        */
+#        "jwtClaims": {
+#          "email": "email",
+#          "familyName": "familyName",
+#          "firstName": "familyName",
+#          "username": "username",
+#          "groups": "groups",
+#          "local": "local"
+#        },
+#        "sillCsvRepoUrl": "https://github.com/etalab/sill-csv",
+#        "sillArchiveRepoUrl": "https://github.com/etalab/sill-csv-private",
+#        "sillArchiveRepoBranch": "archive",
+#        "githubPersonalAccessToken": "xxxxxxx"
+#      }
