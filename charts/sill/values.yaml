@@ -139,7 +139,7 @@ api:
 #          "local": "local"
 #        },
 #        "sillCsvRepoUrl": "https://github.com/etalab/sill-csv",
-#        "sillArchiveRepoUrl": "https://github.com/etalab/sill-csv-private",
-#        "sillArchiveRepoBranch": "archive",
+#        "archiveRepoUrl": "https://github.com/etalab/sill-csv-private",
+#        "archiveRepoBranch": "archive",
 #        "githubPersonalAccessToken": "xxxxxxx"
 #      }
