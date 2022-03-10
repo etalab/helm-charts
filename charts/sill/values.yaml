@@ -130,14 +130,14 @@ api:
 #          "clientId": "sill"
 #        }
 #        */
-#        "jwtClaims": {
-#          "email": "email",
-#          "familyName": "familyName",
-#          "firstName": "familyName",
-#          "username": "username",
-#          "groups": "groups",
-#          "local": "local"
-#        },
+#	       "jwtClaims": {
+#		       "email": "email",
+#		       "familyName": "family_name",
+#		       "firstName": "given_name",
+#		       "username": "preferred_username",
+#  	       "groups": "groups",
+#		       "locale": "locale"
+#	       },
 #        "sillCsvRepoUrl": "https://github.com/etalab/sill-csv",
 #        "archiveRepoUrl": "https://github.com/etalab/sill-csv-private",
 #        "archiveRepoBranch": "archive",
