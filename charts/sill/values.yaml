@@ -125,7 +125,7 @@ api:
 #      {
 #        /*
 #        "keycloakParams": {
-#          "url": "https://auth.etalab.gouv.fr",
+#          "url": "https://auth.etalab.gouv.fr/auth",
 #          "realm": "etalab",
 #          "clientId": "sill"
 #        }
