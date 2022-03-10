@@ -31,7 +31,7 @@ ui:
   name: ui
   replicaCount: 1
   image:
-    name: garronej/sill-web
+    name: etalab/sill-web
     version: latest
     pullPolicy: Always
   podSecurityContext:
@@ -87,7 +87,7 @@ api:
   name: api
   replicaCount: 1
   image:
-    name: garronej/sill-api
+    name: etalab/sill-api
     version: latest
     pullPolicy: Always
   podSecurityContext:
