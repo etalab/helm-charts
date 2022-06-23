@@ -10,7 +10,7 @@
 To use the repo on helm (version 3+):  
 
 ```bash
-helm repo add sill https://etalab.github.io/helm-charts
+helm repo add etalab https://etalab.github.io/helm-charts
 ```
 
 The repo is also browsable directly https://etalab.github.io/helm-charts/index.yaml  
