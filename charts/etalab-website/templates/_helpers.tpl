@@ -2,7 +2,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "keycloakify-demo-app.name" -}}
+{{- define "etalab-website.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
@@ -12,7 +12,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "keycloakify-demo-app.fullname" -}}
+{{- define "etalab-website.fullname" -}}
 {{- if .Values.fullnameOverride -}}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -28,17 +28,17 @@ If release name contains chart name it will be used as a full name.
 
 {{/* Create chart name and version as used by the chart label.  */}}
 
-{{- define "keycloakify-demo-app.chart" -}}
-{{- printf "keycloakify-demo-app" -}}
+{{- define "etalab-website.chart" -}}
+{{- printf "etalab-website" -}}
 {{- end -}}
 
 
 
 {{/*Common labels*/}}
 
-{{- define "keycloakify-demo-app.labels" -}}
-helm.sh/chart: {{ include "keycloakify-demo-app.chart" . }}
-{{ include "keycloakify-demo-app.selectorLabels" . }}
+{{- define "etalab-website.labels" -}}
+helm.sh/chart: {{ include "etalab-website.chart" . }}
+{{ include "etalab-website.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -49,8 +49,8 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 
 {{/*Selector labels*/}}
 
-{{- define "keycloakify-demo-app.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "keycloakify-demo-app.name" . }}
+{{- define "etalab-website.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "etalab-website.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end -}}
 
@@ -59,9 +59,9 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{/*Create the name of the service account to use*/}}
 
 
-{{- define "keycloakify-demo-app.serviceAccountName" -}}
+{{- define "etalab-website.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create -}}
-    {{ default (include "keycloakify-demo-app.fullname" .) .Values.serviceAccount.name }}
+    {{ default (include "etalab-website.fullname" .) .Values.serviceAccount.name }}
 {{- else -}}
     {{ default "default" .Values.serviceAccount.name }}
 {{- end -}}

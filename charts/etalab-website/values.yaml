@@ -29,7 +29,7 @@ ingress:
 
 replicaCount: 1
 image:
-  name: etalab/www.etalab.gouv.fr
+  name: etalab/etalab-website
   version: latest
   pullPolicy: Always
 podSecurityContext:

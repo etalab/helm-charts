@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "keycloakify-demo-app.fullname" . }}
+  name: {{ include "etalab-website.fullname" . }}
   labels:
-    {{- include "keycloakify-demo-app.labels" . | nindent 4 }}
+    {{- include "etalab-website.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "keycloakify-demo-app.selectorLabels" . | nindent 6 }}
+      {{- include "etalab-website.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "keycloakify-demo-app.selectorLabels" . | nindent 8 }}
+        {{- include "etalab-website.selectorLabels" . | nindent 8 }}
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-      serviceAccountName: {{ include "keycloakify-demo-app.serviceAccountName" . }}
+      serviceAccountName: {{ include "etalab-website.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:

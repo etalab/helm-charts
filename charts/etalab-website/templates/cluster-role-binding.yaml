@@ -3,16 +3,16 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: {{ include "keycloakify-demo-app.fullname" . }}
+  name: {{ include "etalab-website.fullname" . }}
   labels:
-    {{- include "keycloakify-demo-app.labels" . | nindent 4 }}
+    {{- include "etalab-website.labels" . | nindent 4 }}
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: cluster-admin
 subjects:
 - kind: ServiceAccount
-  name: {{ include "keycloakify-demo-app.serviceAccountName" . }}
+  name: {{ include "etalab-website.serviceAccountName" . }}
   namespace: {{ .Release.Namespace }}
 {{- end -}}
 {{- end -}}

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "etalab-website.fullname" . }}-test-connection"
+  labels:
+    {{- include "etalab-website.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "etalab-website.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

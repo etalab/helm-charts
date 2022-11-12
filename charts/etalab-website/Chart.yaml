@@ -1,5 +1,5 @@
 apiVersion: v2
-name: www.etalab.gouv.fr
+name: etalab-website
 description: The Etalab website
 icon: https://etalab.github.io/helm-charts/icons/etalab.png
 # A chart can be either an 'application' or a 'library' chart.
