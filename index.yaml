@@ -1,5 +1,17 @@
 apiVersion: v1
 entries:
+  etalab-website:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-11-12T14:19:00.669817414Z"
+    description: The Etalab website
+    digest: fcc11a458af178297b176dac79d6043914b7d9a010b69413a2751fa3eafbc2b2
+    icon: https://etalab.github.io/helm-charts/icons/etalab.png
+    name: etalab-website
+    type: application
+    urls:
+    - https://github.com/etalab/helm-charts/releases/download/etalab-website-1.0.0/etalab-website-1.0.0.tgz
+    version: 1.0.0
   keycloakify-demo-app:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -58,4 +70,4 @@ entries:
     urls:
     - https://github.com/etalab/helm-charts/releases/download/www.etalab.gouv.fr-1.0.0/www.etalab.gouv.fr-1.0.0.tgz
     version: 1.0.0
-generated: "2022-11-12T02:07:13.798453534Z"
+generated: "2022-11-12T14:19:00.669831514Z"
