@@ -3,6 +3,17 @@ entries:
   keycloakify-demo-app:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-11-12T02:07:13.677513817Z"
+    description: Keycloakify-demo-app helm chart
+    digest: 726a4cd86410ad0e908720c2ecdfa1a5676bfaba6302c078a4846af0e490f568
+    icon: https://etalab.github.io/helm-charts/icons/keycloakify.png
+    name: keycloakify-demo-app
+    type: application
+    urls:
+    - https://github.com/etalab/helm-charts/releases/download/keycloakify-demo-app-0.0.3/keycloakify-demo-app-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-06-23T19:34:05.012797119Z"
     description: Keycloakify-demo-app helm chart
     digest: c126dd625aaca18831b39dbf3c0b56dac5494d408bd47a7c4924ed10f5ef8076
@@ -35,4 +46,16 @@ entries:
     urls:
     - https://github.com/etalab/helm-charts/releases/download/sill-0.0.7/sill-0.0.7.tgz
     version: 0.0.7
-generated: "2022-06-23T19:34:05.012810019Z"
+  www.etalab.gouv.fr:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-11-12T02:07:13.798442034Z"
+    description: The Etalab website
+    digest: 6b81c61d50dd4826107785473afd2450eb3e12f4310804429f62833085f65339
+    icon: https://etalab.github.io/helm-charts/icons/etalab.png
+    name: www.etalab.gouv.fr
+    type: application
+    urls:
+    - https://github.com/etalab/helm-charts/releases/download/www.etalab.gouv.fr-1.0.0/www.etalab.gouv.fr-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-11-12T02:07:13.798453534Z"
